@@ -6,8 +6,8 @@ function App() {
   const name = useGlobalContext();
   return (
     <>
-      <QuizShow />
-      {/* <QuizForm /> */}
+      {/* <QuizShow /> */}
+      <QuizForm />
     </>
   );
 }
