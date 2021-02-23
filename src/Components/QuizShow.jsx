@@ -27,25 +27,27 @@ const QuizShow = () => {
   };
 
   if (isLoading === true) return "...loading";
-  else if (endQuestion === true) return <Success totalAnswer={totalCorrect} />;
+  else if (endQuestion === true) return <Success className="quiz__success" totalAnswer={totalCorrect} />;
   else {
     return (
-      <section>
-        <div>
-          <label>
-            Totla correct answer is {totalCorrect}/ {amount}
-          </label>
-        </div>
-        <div>
-          <p>{question.question}</p>
-        </div>
-        <div>
+      <section className="show__wrapper">
+        <p className="show__p answer">
+          Correct Answers: {totalCorrect}/ {amount}
+        </p>
+
+        <p className="show__p question">{question.question}</p>
+        <div className="show__buttom__wrapper">
           {result.map((val, index) => {
             return (
-              <button value={val} key={index} onClick={hadnleAnswer}>
+              <button
+                className="btn"
+                value={val}
+                key={index}
+                onClick={hadnleAnswer}
+              >
                 {val}
               </button>
-            );
+            )
           })}
         </div>
       </section>

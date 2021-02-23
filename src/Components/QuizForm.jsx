@@ -4,14 +4,15 @@ import { useGlobalContext } from "../context";
 const QuizForm = () => {
   const { handleChange, quiz, handleQuestions } = useGlobalContext();
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleQuestions()
-      }}
-    >
-      <label>
-        Number of question
+    <section className="quiz__form__wrapper">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleQuestions();
+        }}
+        className="form"
+      >
+        <label>Number Of Question</label>
         <input
           type="number"
           name="amount"
@@ -20,17 +21,13 @@ const QuizForm = () => {
           max="10"
           onChange={handleChange}
         ></input>
-      </label>
-      <label>
-        Select Category
+        <label>Select Category</label>
         <select name="category" onChange={handleChange} value={quiz.category}>
           <option value="21">sport</option>
           <option value="22">Geography</option>
           <option value="23">History</option>
         </select>
-      </label>
-      <label>
-        select difficulty level
+        <label>Select Difficulty Level</label>
         <select
           name="difficulty"
           value={quiz.difficulty}
@@ -46,9 +43,9 @@ const QuizForm = () => {
             medium
           </option>
         </select>
-      </label>
-      <button>Search</button>
-    </form>
+        <button className="btn">Search</button>
+      </form>
+    </section>
   );
 };
 

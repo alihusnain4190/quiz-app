@@ -1,0 +1,104 @@
+.quiz__form {
+  margin-left: 35%;
+  margin-top: 3%;
+  .quiz__form__wrapper {
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      input,
+      button,
+      select {
+        border: 1px solid #333;
+        border-radius: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 30%;
+        height: 35px;
+        color: #333;
+        font-size: large;
+      }
+      label {
+        color: #004e68;
+      }
+      .btn {
+        color: #fff;
+        height: 40px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: none;
+        background-color: #ffa31a;
+      }
+      .btn:hover {
+        transition: all 0.3s ease;
+        color: #333;
+        background-color: #ffb84d;
+      }
+    }
+  }
+}
+.quiz__show {
+  margin-top: 4%;
+  margin-left: 25%;
+  width: 50%;
+  height: 50vh;
+  color: #fff;
+  background-color: #004e68;
+  border: 1px solid #333;
+  border-radius: 10px;
+  .show__wrapper {
+    .answer {
+      text-align: right;
+      margin-right: 10px;
+      margin-top: 20px;
+    }
+    .question {
+      margin-top: 50px;
+      margin-left: 10px;
+      font-size: large;
+    }
+    .show__buttom__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .btn {
+        color: #fff;
+        height: 10%;
+        width: 20%;
+        margin-top: 30px;
+        padding: 5px 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        border: none;
+        background-color: #ffa31a;
+      }
+      .btn:hover {
+        transition: all 0.3s ease;
+        color: #333;
+        background-color: #ffb84d;
+      }
+    }
+  }
+    .success__wrapper {
+      margin-top: 10%;
+      text-align: center;
+      .btn {
+        color: #fff;
+        height: 20%;
+        font-size: 2rem;
+        width: 40%;
+        margin-top: 30px;
+        padding: 5px 10px;
+        margin-left: 3px;
+        border-radius: 6px;
+        border: none;
+        background-color: #ffa31a;
+      }
+      .btn:hover {
+        transition: all 0.3s ease;
+        color: #333;
+        background-color: #ffb84d;
+      }
+    }
+  }
