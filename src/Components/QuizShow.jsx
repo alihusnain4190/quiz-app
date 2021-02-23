@@ -1,11 +1,11 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 import { randomSelection } from "../utills";
+import Success from "./Success";
 const QuizShow = () => {
   const {
     isLoading,
     question,
-    handleIncrement,
     endQuestion,
     totalCorrect,
     handleCorrectAnswer,
@@ -27,7 +27,7 @@ const QuizShow = () => {
   };
 
   if (isLoading === true) return "...loading";
-  else if (endQuestion === true) return "success";
+  else if (endQuestion === true) return <Success totalAnswer={totalCorrect} />;
   else {
     return (
       <section>
@@ -48,7 +48,6 @@ const QuizShow = () => {
             );
           })}
         </div>
-      
       </section>
     );
   }

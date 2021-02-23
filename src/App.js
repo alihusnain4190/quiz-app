@@ -3,13 +3,9 @@ import { useGlobalContext } from "./context";
 import QuizForm from "./Components/QuizForm";
 import QuizShow from "./Components/QuizShow";
 function App() {
-  const name = useGlobalContext();
-  return (
-    <>
-      {/* <QuizShow /> */}
-      <QuizForm />
-    </>
-  );
+  const { formInput } = useGlobalContext();
+  if (formInput === true) return <QuizShow />;
+  return <QuizForm />;
 }
 
 export default App;

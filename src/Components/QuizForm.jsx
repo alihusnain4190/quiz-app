@@ -2,9 +2,14 @@ import React from "react";
 import { useGlobalContext } from "../context";
 
 const QuizForm = () => {
-  const { handleChange, quiz } = useGlobalContext();
+  const { handleChange, quiz, handleQuestions } = useGlobalContext();
   return (
-    <form>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleQuestions()
+      }}
+    >
       <label>
         Number of question
         <input
