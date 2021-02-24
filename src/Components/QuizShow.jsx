@@ -25,17 +25,16 @@ const QuizShow = () => {
       handleCorrectAnswer(false);
     }
   };
-
   if (isLoading === true) return "...loading";
-  else if (endQuestion === true) return <Success className="quiz__success" totalAnswer={totalCorrect} />;
+  else if (endQuestion === true)
+    return <Success className="quiz__success" totalAnswer={totalCorrect} />;
   else {
     return (
       <section className="show__wrapper">
         <p className="show__p answer">
           Correct Answers: {totalCorrect}/ {amount}
         </p>
-
-        <p className="show__p question">{question.question}</p>
+        <h2 dangerouslySetInnerHTML={{ __html: question.question }} />
         <div className="show__buttom__wrapper">
           {result.map((val, index) => {
             return (
@@ -47,7 +46,7 @@ const QuizShow = () => {
               >
                 {val}
               </button>
-            )
+            );
           })}
         </div>
       </section>
