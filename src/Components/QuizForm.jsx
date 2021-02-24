@@ -26,6 +26,7 @@ const QuizForm = () => {
           <option value="21">sport</option>
           <option value="22">Geography</option>
           <option value="23">History</option>
+          <option value="31">Entertainment</option>
         </select>
         <label>Select Difficulty Level</label>
         <select
@@ -36,11 +37,12 @@ const QuizForm = () => {
           <option name="difficulty" value="easy">
             easy
           </option>
-          <option name="difficulty" value="hard">
-            hard
-          </option>
+
           <option name="difficulty" value="medium">
             medium
+          </option>
+          <option name="difficulty" value="hard">
+            hard
           </option>
         </select>
         <button className="btn">Search</button>

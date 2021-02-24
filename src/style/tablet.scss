@@ -1,9 +1,8 @@
-@import './style/phone.scss';
-@import './style/tablet.scss';
 @media only screen and (min-width: 768px) {
+
   .quiz__form {
-    margin-left: 35%;
-    margin-top: 3%;
+    margin-left: 20%;
+    margin-top: 20%;
     .quiz__form__wrapper {
       .form {
         display: flex;
@@ -17,7 +16,7 @@
           margin-top: 10px;
           margin-bottom: 10px;
           text-align: center;
-          width: 30%;
+          width: 80%;
           height: 35px;
           color: #333;
           font-size: large;
@@ -42,9 +41,9 @@
     }
   }
   .quiz__show {
-    margin-top: 4%;
-    margin-left: 25%;
-    width: 50%;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 80%;
     height: 50vh;
     color: #fff;
     background-color: #004e68;
@@ -59,17 +58,18 @@
       .question {
         margin-top: 50px;
         margin-left: 10px;
-        font-size: large;
+        font-size: medium;
       }
       .show__buttom__wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         .btn {
+          font-size: 12px;
           color: #fff;
           height: 10%;
-          width: 20%;
-          margin-top: 30px;
+          width: 25%;
+          margin-top: 20px;
           padding: 5px 10px;
           margin-left: 3px;
           border-radius: 6px;
@@ -90,7 +90,7 @@
         color: #fff;
         height: 20%;
         font-size: 2rem;
-        width: 40%;
+        width: 70%;
         margin-top: 30px;
         padding: 5px 10px;
         margin-left: 3px;
